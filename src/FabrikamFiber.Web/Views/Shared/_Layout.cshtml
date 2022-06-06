@@ -31,6 +31,10 @@
 
             <nav>
                 <ul>
+                    @if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name))
+                    {
+                        <li>Hello, @User.Identity.Name!</li>
+                    }
                     <li>@Html.ActionLink("Dashboard", "Index", "Home")</li>
                     <li>@Html.ActionLink("Tickets", "Index", "ServiceTickets")</li>
                     <li>@Html.ActionLink("Customers", "Index", "Customers")</li>
