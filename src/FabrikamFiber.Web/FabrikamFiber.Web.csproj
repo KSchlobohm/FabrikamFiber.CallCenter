@@ -180,6 +180,7 @@
     <None Include="Content\fonts\segoewp-webfont.eot" />
     <None Include="Content\fonts\segoewp-webfont.ttf" />
     <None Include="Content\fonts\segoewp-webfont.woff" />
+    <Content Include="Views\Home\SecurePage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fullcalendar.css" />

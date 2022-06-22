@@ -36,5 +36,11 @@
 
             return View(viewModel);
         }
+
+        [Authorize(Roles = "Administrators")]
+        public ActionResult SecurePage()
+        {
+            return View();
+        }
     }
 }
